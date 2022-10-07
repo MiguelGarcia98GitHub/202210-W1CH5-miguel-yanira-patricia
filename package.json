@@ -1,0 +1,19 @@
+{
+    "name": "challenge-grupal-semana-1",
+    "version": "1.0.0",
+    "description": "Travelulu challenge grupal 1",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass sass:css --watch",
+        "prepare": "husky install"
+    },
+    "author": "Miguel García, Patricia Tellez y Yanira Zapata",
+    "license": "ISC",
+    "dependencies": {
+        "husky": "^8.0.1"
+    },
+    "devDependencies": {
+        "sass": "^1.55.0"
+    }
+}
