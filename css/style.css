@@ -1,3 +1,27 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-between;
+  border-bottom: 1px #bca4ff solid;
+}
+
+.burger {
+  width: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
