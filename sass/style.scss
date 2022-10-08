@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 *,
 *::after,
 *::before {
@@ -15,9 +17,75 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 2rem;
+    padding-bottom: 1rem;
     justify-content: space-between;
     border-bottom: 1px #bca4ff solid;
 }
+h1 {
+    padding: 15px;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
 .burger {
     width: 40px;
+}
+.panel {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+    border-bottom: 1px solid #bca4ff;
+}
+.where {
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 15px;
+}
+.dates {
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 15px;
+}
+.people {
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 15px;
+}
+.search {
+    background-color: rgba(237, 46, 126, 1);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content;
+    }
+    :-moz-placeholder {
+        @content;
+    }
+    ::-moz-placeholder {
+        @content;
+    }
+    :-ms-input-placeholder {
+        @content;
+    }
+}
+
+@include placeholder {
+    color: black;
+    align-items: flex-start;
+    text-overflow: ellipsis;
 }
