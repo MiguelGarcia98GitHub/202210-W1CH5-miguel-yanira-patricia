@@ -34,13 +34,10 @@
 
 html,
 body {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  min-width: 100vw;
 }
 
 header {
@@ -63,7 +60,7 @@ nav {
 
 .subline {
   margin-top: 1.5rem;
-  width: 100vw;
+  width: 100%;
   height: 1px;
   background-color: rgb(188, 164, 255);
 }
