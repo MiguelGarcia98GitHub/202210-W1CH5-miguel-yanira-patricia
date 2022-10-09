@@ -16,7 +16,7 @@ body {
 header {
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 2rem;
     padding-bottom: 1rem;
@@ -24,6 +24,21 @@ header {
     border-bottom: 1px #bca4ff solid;
     font-family: "Poppins", sans-serif;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.subline {
+    margin-top: 1.5rem;
+    width: 100vw;
+    height: 1px;
+    background-color: rgba(188, 164, 255, 1);
+}
+
 h1 {
     padding: 15px;
     font-family: "Poppins";
@@ -41,13 +56,12 @@ main > section {
 }
 
 .panel {
-    background-color: #fcfcfc;
+    width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
     gap: 15px;
-    border-bottom: 1px solid #bca4ff;
+    padding-bottom: 2rem;
 }
 .where {
     background-color: #fcfcfc;
@@ -106,10 +120,10 @@ main > section {
 .sidebar {
     background-color: #2a00a2;
     width: 360px;
-    height: 590px;
     border-radius: 20px;
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
+    padding-bottom: 2rem;
     align-items: center;
     justify-content: center;
 }
@@ -117,6 +131,7 @@ main > section {
 .sidebar__form__title {
     color: #bca4ff;
     font-size: 24px;
+
     margin-left: 0.25rem;
 }
 
@@ -162,7 +177,6 @@ main > section {
     margin: 2rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: left;
 
     .propertiesfound__item__title {
         font-size: 24px;
@@ -174,6 +188,8 @@ main > section {
         flex-direction: column;
         align-items: left;
         margin: 0 1.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgba(217, 219, 233, 1);
 
         .propertiesfound__item__gallery {
             margin-top: 2rem;
@@ -243,12 +259,15 @@ main > section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 427.37px;
-    height: 463.06px;
+    width: 360px;
+    height: 463px;
     border-radius: 25px 25px 25px 25px;
+    margin-top: 2rem;
 
     div:nth-of-type(1) {
         margin-top: 70px;
+        padding: 0 0.5rem;
+        height: 260px;
     }
 
     div {
@@ -262,7 +281,7 @@ main > section {
         text-align: center;
         color: white;
         font-size: 48px;
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: 2px;
     }
     .contactbutton {
@@ -271,47 +290,87 @@ main > section {
         border-radius: 25px 25px 25px 25px;
         padding: 10px;
         border: 2px solid;
-        width: 363px;
+        width: 300px;
         padding: 1rem 0;
         font-weight: 600;
     }
 }
 
-.greenbutton {
+.greencontainer {
     box-sizing: border-box;
     background-color: rgba(242, 255, 251, 1);
     color: rgba(0, 150, 109, 1);
-    width: 421px;
-    height: 124px;
-    left: 30px;
+    width: 360px;
+    padding: 1rem;
     border-radius: 25px 25px 25px 25px;
     border-color: rgba(0, 150, 109, 1);
-}
-.thumbsup {
     display: flex;
-    align-content: center;
-    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 14px;
+    border: 2px solid #00ba88;
+    border-radius: 16px;
+    padding: 0 1.5rem;
+
+    .greencontainer__info__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .greencontainer__thumbsup__container {
+        padding: 1.5rem 1rem 1rem 0;
+    }
+
+    .greencontainer__thumbsup__container__cross {
+        align-self: center;
+    }
 }
-.redbutton {
+
+.redcontainer {
     box-sizing: border-box;
     background-color: rgba(255, 243, 248, 1);
-    color: rgba(195, 0, 82, 1);
+    color: rgba(237, 46, 126, 1);
+    width: 360px;
+    padding: 1rem;
     border-radius: 25px 25px 25px 25px;
-    width: 421px;
-    height: 151px;
-    left: 30px;
-    border-color: rgba(195, 0, 82, 1);
-}
-.alert {
+    border-color: rgba(237, 46, 126, 1);
     display: flex;
-    align-content: center;
-    justify-content: flex-start;
+    flex-direction: row;
+    border: 2px solid rgba(237, 46, 126, 1);
+    border-radius: 16px;
+    padding: 0 1.5rem;
+    font-size: 14px;
+
+    .redcontainer__info__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .redcontainer__alert__container {
+        padding: 1.5rem 1rem 1rem 0;
+    }
+
+    .redcontainer__alert__container__cross {
+        align-self: center;
+    }
 }
+
 footer {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    justify-content: center;
     font-family: "Poppins", sans-serif;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 3rem;
+
+    & > p {
+        text-align: center;
+    }
+}
+
+.notifications__container {
+    & > div {
+        margin-top: 2rem;
+    }
 }
