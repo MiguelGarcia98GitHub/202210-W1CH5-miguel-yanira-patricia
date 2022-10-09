@@ -64,3 +64,5 @@ burgerMenu.addEventListener("click", () => {
         headerHTML.style.border = "block";
     }
 });
+
+var docWidth = document.documentElement.offsetWidth;
