@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    min-height: 100vh;
 }
 
 header {
@@ -21,6 +22,7 @@ header {
     padding-bottom: 1rem;
     justify-content: space-between;
     border-bottom: 1px #bca4ff solid;
+    font-family: "Poppins", sans-serif;
 }
 h1 {
     padding: 15px;
@@ -38,9 +40,6 @@ main > section {
     justify-content: center;
 }
 
-.burger {
-    width: 40px;
-}
 .panel {
     background-color: #fcfcfc;
     display: flex;
@@ -96,6 +95,10 @@ main > section {
     color: black;
     align-items: flex-start;
     text-overflow: ellipsis;
+}
+
+.burger {
+    width: 40px;
 }
 
 // Miguel
@@ -233,4 +236,82 @@ main > section {
         height: 1px;
         width: 90%;
     }
+}
+
+.purple-box {
+    background-image: url(../assets/purple-box.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 427.37px;
+    height: 463.06px;
+    border-radius: 25px 25px 25px 25px;
+
+    div:nth-of-type(1) {
+        margin-top: 70px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div p {
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+    .contactbutton {
+        background-color: transparent;
+        color: white;
+        border-radius: 25px 25px 25px 25px;
+        padding: 10px;
+        border: 2px solid;
+        width: 363px;
+        padding: 1rem 0;
+        font-weight: 600;
+    }
+}
+
+.greenbutton {
+    box-sizing: border-box;
+    background-color: rgba(242, 255, 251, 1);
+    color: rgba(0, 150, 109, 1);
+    width: 421px;
+    height: 124px;
+    left: 30px;
+    border-radius: 25px 25px 25px 25px;
+    border-color: rgba(0, 150, 109, 1);
+}
+.thumbsup {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+.redbutton {
+    box-sizing: border-box;
+    background-color: rgba(255, 243, 248, 1);
+    color: rgba(195, 0, 82, 1);
+    border-radius: 25px 25px 25px 25px;
+    width: 421px;
+    height: 151px;
+    left: 30px;
+    border-color: rgba(195, 0, 82, 1);
+}
+.alert {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    bottom: 0;
 }
