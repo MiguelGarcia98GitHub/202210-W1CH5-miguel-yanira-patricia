@@ -32,10 +32,368 @@
             </div>
         </header>
         <main>
-            <section></section>
+            <section class="panel">
+                <h1>Find deals on hotels, homes and much more...</h1>
+                <input
+                    class="where"
+                    type="text"
+                    id="where"
+                    name="where"
+                    required
+                    placeholder="Where are you going?"
+                    href="./assets/Search.png"
+                />
+                <input
+                    class="dates"
+                    type="text"
+                    id="dates"
+                    name="dates"
+                    required
+                    placeholder="Check-in - Check-out"
+                />
+                <input
+                    class="people"
+                    type="text"
+                    id="people"
+                    name="people "
+                    required
+                    placeholder="2 adults - 0 children"
+                />
+
+                <button class="search" type="submit" value="Search">
+                    Search
+                </button>
+            </section>
             <section>
-                <div></div>
-                <div></div>
+                <div class="sidebar">
+                    <form class="sidebar__form" action="get">
+                        <div class="sidebar__form__title__container">
+                            <h2 class="sidebar__form__title">Search</h2>
+                        </div>
+
+                        <div class="sidebar__form__container__options">
+                            <div
+                                class="sidebar__form__container__options__individual__container"
+                            >
+                                <label
+                                    class="sidebar__form__container__options__individual__container__label"
+                                    for="destination-select"
+                                    >Destination/property name</label
+                                >
+                                <select
+                                    class="sidebar__form__container__options__individual__container__select"
+                                    name="destination"
+                                    id="destination-select"
+                                >
+                                    <img src="" alt="" />
+                                    <option
+                                        class="sidebar__form__container__options__individual__container__select_option"
+                                        value="Gold Coast"
+                                    >
+                                        Gold Coast
+                                    </option>
+                                </select>
+                            </div>
+                            <div
+                                class="sidebar__form__container__options__individual__container"
+                            >
+                                <label
+                                    class="sidebar__form__container__options__individual__container__label"
+                                    for="checkin"
+                                    >Check-in date</label
+                                >
+                                <select
+                                    class="sidebar__form__container__options__individual__container__select"
+                                    name="checkin"
+                                    id="checkin"
+                                >
+                                    <img src="" alt="" />
+                                    <option
+                                        class="sidebar__form__container__options__individual__container__select_option"
+                                        value="checkin"
+                                    >
+                                        Check-in date
+                                    </option>
+                                </select>
+                            </div>
+                            <div
+                                class="sidebar__form__container__options__individual__container"
+                            >
+                                <label
+                                    class="sidebar__form__container__options__individual__container__label"
+                                    for="checkout"
+                                    >Check-out date</label
+                                >
+                                <select
+                                    class="sidebar__form__container__options__individual__container__select"
+                                    name="checkout"
+                                    id="checkout"
+                                >
+                                    <img src="" alt="" />
+                                    <option
+                                        class="sidebar__form__container__options__individual__container__select_option"
+                                        value="checkout"
+                                    >
+                                        Check-out date
+                                    </option>
+                                </select>
+                            </div>
+                            <div
+                                class="sidebar__form__container__options__individual__container"
+                            >
+                                <label
+                                    class="sidebar__form__container__options__individual__container__label"
+                                    for="travellers"
+                                    >Travellers</label
+                                >
+                                <select
+                                    class="sidebar__form__container__options__individual__container__select"
+                                    name="travellers"
+                                    id="travellers"
+                                >
+                                    <img src="" alt="" />
+                                    <option
+                                        class="sidebar__form__container__options__individual__container__select_option"
+                                        value="travellers"
+                                    >
+                                        2 adults - 0 children
+                                    </option>
+                                </select>
+                            </div>
+
+                            <button
+                                class="sidebar__form__container__options__button"
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div>
+                      <div class="propertiesfound">
+                        <div class="propertiesfound__item">
+                            <div class="propertiesfound__item__title">
+                                254 Properties Found
+                            </div>
+                            <div class="propertiesfound__item__gallery">
+                                <img
+                                    class="propertiesfound_item_img"
+                                    src="./assets/house1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="propertiesfound__item__info">
+                                <div class="propertiesfound__item__rating">
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="propertiesfound__item__name">
+                                    Estate de la Newcastle
+                                </div>
+                                <div class="propertiesfound__item__description">
+                                    Newcastle City Centre, Newcastle upon Tyne
+                                    0.1km from centre
+                                </div>
+                                <div class="propertiesfound__item__showonmap">
+                                    <div>
+                                        <img
+                                            src="./assets/Location.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__showonmap__text"
+                                    >
+                                        Show on map
+                                    </div>
+                                </div>
+                                <div
+                                    class="propertiesfound__item__showonmap__info"
+                                >
+                                    Situated in Newcastle City Centre, Maldron
+                                    Hotel features free WiFi and a private court
+                                    yard.
+                                </div>
+                                <button class="propertiesfound__item__button">
+                                    Make a booking
+                                </button>
+                            </div>
+                        </div>
+                        <div class="propertiesfound__bottom__line"></div>
+                    </div>
+                                        <div class="propertiesfound">
+                        <div class="propertiesfound__item">
+                            <div class="propertiesfound__item__title">
+                                254 Properties Found
+                            </div>
+                            <div class="propertiesfound__item__gallery">
+                                <img
+                                    class="propertiesfound_item_img"
+                                    src="./assets/house1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="propertiesfound__item__info">
+                                <div class="propertiesfound__item__rating">
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="propertiesfound__item__name">
+                                    Estate de la Newcastle
+                                </div>
+                                <div class="propertiesfound__item__description">
+                                    Newcastle City Centre, Newcastle upon Tyne
+                                    0.1km from centre
+                                </div>
+                                <div class="propertiesfound__item__showonmap">
+                                    <div>
+                                        <img
+                                            src="./assets/Location.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__showonmap__text"
+                                    >
+                                        Show on map
+                                    </div>
+                                </div>
+                                <div
+                                    class="propertiesfound__item__showonmap__info"
+                                >
+                                    Situated in Newcastle City Centre, Maldron
+                                    Hotel features free WiFi and a private court
+                                    yard.
+                                </div>
+                                <button class="propertiesfound__item__button">
+                                    Make a booking
+                                </button>
+                            </div>
+                        </div>
+                        <div class="propertiesfound__bottom__line"></div>
+                    </div>
+                                        <div class="propertiesfound">
+                        <div class="propertiesfound__item">
+                            <div class="propertiesfound__item__title">
+                                254 Properties Found
+                            </div>
+                            <div class="propertiesfound__item__gallery">
+                                <img
+                                    class="propertiesfound_item_img"
+                                    src="./assets/house1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="propertiesfound__item__info">
+                                <div class="propertiesfound__item__rating">
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="propertiesfound__item__name">
+                                    Estate de la Newcastle
+                                </div>
+                                <div class="propertiesfound__item__description">
+                                    Newcastle City Centre, Newcastle upon Tyne
+                                    0.1km from centre
+                                </div>
+                                <div class="propertiesfound__item__showonmap">
+                                    <div>
+                                        <img
+                                            src="./assets/Location.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__showonmap__text"
+                                    >
+                                        Show on map
+                                    </div>
+                                </div>
+                                <div
+                                    class="propertiesfound__item__showonmap__info"
+                                >
+                                    Situated in Newcastle City Centre, Maldron
+                                    Hotel features free WiFi and a private court
+                                    yard.
+                                </div>
+                                <button class="propertiesfound__item__button">
+                                    Make a booking
+                                </button>
+                            </div>
+                        </div>
+                        <div class="propertiesfound__bottom__line"></div>
+                    </div>
+                </div>
             </section>
             <section>
                 <span

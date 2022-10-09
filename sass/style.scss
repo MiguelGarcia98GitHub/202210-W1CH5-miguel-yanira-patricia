@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 *,
 *::after,
@@ -19,12 +19,223 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 2rem;
+    padding-bottom: 1rem;
     justify-content: space-between;
     border-bottom: 1px #bca4ff solid;
     font-family: "Poppins", sans-serif;
 }
+h1 {
+    padding: 15px;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+    border-bottom: 1px solid #bca4ff;
+}
+.where {
+    background-color: #fcfcfc;
+    border-radius: 16px;
+    border: 2px solid black;
+    padding: 15px;
+}
+.dates {
+    background-color: #fcfcfc;
+    border-radius: 16px;
+    border: 2px solid black;
+    padding: 15px;
+}
+.people {
+    background-color: #fcfcfc;
+    border-radius: 16px;
+    border: 2px solid black;
+    padding: 15px;
+}
+.search {
+    background-color: rgba(237, 46, 126, 1);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content;
+    }
+    :-moz-placeholder {
+        @content;
+    }
+    ::-moz-placeholder {
+        @content;
+    }
+    :-ms-input-placeholder {
+        @content;
+    }
+}
+
+@include placeholder {
+    color: black;
+    align-items: flex-start;
+    text-overflow: ellipsis;
+}
+
 .burger {
     width: 40px;
+}
+
+// Miguel
+
+.sidebar {
+    background-color: #2a00a2;
+    width: 360px;
+    height: 590px;
+    border-radius: 20px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar__form__title {
+    color: #bca4ff;
+    font-size: 24px;
+    margin-left: 0.25rem;
+}
+
+.sidebar__form__container__options__individual__container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.sidebar__form__container__options__individual__container__label {
+    color: #f3efff;
+    font-weight: 400;
+    margin-left: 0.25rem;
+}
+
+.sidebar__form__container__options__individual__container__select {
+    width: 310px;
+    height: 59px;
+    border-radius: 15px;
+    background-color: #eff0f6;
+    margin-top: 0.25rem;
+    font-family: inherit;
+    padding: 1rem;
+    border-right: 16px solid transparent; // Fix left arrow dropdown icon by adding some space to the right
+}
+
+.sidebar__form__container__options__button {
+    background-color: rgba(237, 46, 126, 1);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+//
+
+.propertiesfound {
+    margin: 2rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    .propertiesfound__item__title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .propertiesfound__item {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 0 1.5rem;
+
+        .propertiesfound__item__gallery {
+            margin-top: 2rem;
+        }
+
+        .propertiesfound__item__info {
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .propertiesfound__item__rating {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            margin-top: 1rem;
+
+            .propertiesfound__item__rating__star {
+                padding-right: 0.5rem;
+            }
+        }
+
+        .propertiesfound__item__name {
+            font-size: 24px;
+            color: #5f2eea;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .propertiesfound__item__showonmap {
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+
+            .propertiesfound__item__showonmap__text {
+                margin-left: 0.5rem;
+                font-weight: 600;
+                font-size: 18px;
+                color: #5f2eea;
+            }
+        }
+
+        .propertiesfound__item__button {
+            border-radius: 40px;
+            border: 2px solid #d9dbe9;
+            background-color: transparent;
+            outline: none;
+            margin-top: 1rem;
+            width: 50%;
+            color: #5f2eea;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    .propertiesfound__bottom__line {
+        margin: 2.5rem;
+        background-color: #d9dbe9;
+        height: 1px;
+        width: 90%;
+    }
 }
 
 .purple-box {
