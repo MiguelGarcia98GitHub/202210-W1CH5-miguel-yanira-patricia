@@ -9,18 +9,19 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+        
         <title>Travelulu</title>
     </head>
-    <body>
+    <body class="body__container">
+        <div>
         <header>
-            <nav>
-                
+            <nav>     
             <div>
                 <img src="./assets/Travelulu-logo.png" alt="Logo Travelulu" />
             </div>
             <div>
                 <svg
+                    id="burger"
                     class="burger"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -34,10 +35,12 @@
             </div>
             
             </nav>
-            <div class="subline"></div>
-             <section class="panel">
+            <div class="subline" id="subline"></div>
+             <section class="panel" id="panel1">
                 <h1>Find deals on hotels, homes and much more...</h1>
+                <div class="panel__input__containers">
                 
+                <div class="where__container">
                 <input
                     class="where"
                     type="text"
@@ -47,6 +50,8 @@
                     placeholder="Where are you going?"
                     href="./assets/Search.png"
                 />
+                </div>
+                <div class="dates__container">
                 <input
                     class="dates"
                     type="text"
@@ -55,6 +60,8 @@
                     required
                     placeholder="Check-in - Check-out"
                 />
+                </div>
+                <div class="people__container">
                 <input
                     class="people"
                     type="text"
@@ -63,15 +70,19 @@
                     required
                     placeholder="2 adults - 0 children"
                 />
-
+                </div>
+                <div class="search__container">
                 <button class="search" type="submit" value="Search">
                     Search
                 </button>
+                </div>
+                </div>
             </section>
         </header>
+        <div id="js__menu"></div>
         <main>
            
-            <section>
+            <section class="searchandproperties">
                 <div class="sidebar">
                     <form class="sidebar__form" action="get">
                         <div class="sidebar__form__title__container">
@@ -176,14 +187,10 @@
                         </div>
                     </form>
                 </div>
-                <div>
-                    <div>
-                      <div class="propertiesfound">
+                       <div class="propertiesfound">
                         <div class="propertiesfound__item">
-                            <div class="propertiesfound__item__title">
-                                254 Properties Found
-                            </div>
-                            <div class="propertiesfound__item__gallery">
+                            <div class="propertiesfound__item__galleryandinfo">
+                                <div class="propertiesfound__item__gallery">
                                 <img
                                     class="propertiesfound_item_img"
                                     src="./assets/house1.png"
@@ -192,6 +199,7 @@
                             </div>
                             <div class="propertiesfound__item__info">
                                 <div class="propertiesfound__item__rating">
+                                    <div class="propertiesfound__item__rating__stars">
                                     <div
                                         class="propertiesfound__item__rating__star"
                                     >
@@ -217,6 +225,10 @@
                                     >
                                         <img src="./assets/Star.png" alt="" />
                                     </div>
+                                    </div>
+                                     <button class="propertiesfound__item__newbutton">
+                                    Make a booking
+                                        </button>
                                 </div>
                                 <div class="propertiesfound__item__name">
                                     Estate de la Newcastle
@@ -245,101 +257,30 @@
                                     Hotel features free WiFi and a private court
                                     yard.
                                 </div>
+                                <div>
                                 <button class="propertiesfound__item__button">
                                     Make a booking
                                 </button>
+                                </div>
                             </div>
                         </div>
-                        <div class=""></div>
-                    </div>
-                                        <div class="propertiesfound">
-                        <div class="propertiesfound__item">
-                            <div class="propertiesfound__item__title">
-                                254 Properties Found
-                            </div>
-                            <div class="propertiesfound__item__gallery">
-                                <img
-                                    class="propertiesfound_item_img"
-                                    src="./assets/house2.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="propertiesfound__item__info">
-                                <div class="propertiesfound__item__rating">
-                                    <div
-                                        class="propertiesfound__item__rating__star"
-                                    >
-                                        <img src="./assets/Star.png" alt="" />
-                                    </div>
-                                    <div
-                                        class="propertiesfound__item__rating__star"
-                                    >
-                                        <img src="./assets/Star.png" alt="" />
-                                    </div>
-                                    <div
-                                        class="propertiesfound__item__rating__star"
-                                    >
-                                        <img src="./assets/Star.png" alt="" />
-                                    </div>
-                                    <div
-                                        class="propertiesfound__item__rating__star"
-                                    >
-                                        <img src="./assets/Star.png" alt="" />
-                                    </div>
-                                    <div
-                                        class="propertiesfound__item__rating__star"
-                                    >
-                                        <img src="./assets/Star.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="propertiesfound__item__name">
-                                    Estate de la Newcastle
-                                </div>
-                                <div class="propertiesfound__item__description">
-                                    Newcastle City Centre, Newcastle upon Tyne
-                                    0.1km from centre
-                                </div>
-                                <div class="propertiesfound__item__showonmap">
-                                    <div>
-                                        <img
-                                            src="./assets/Location.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div
-                                        class="propertiesfound__item__showonmap__text"
-                                    >
-                                        Show on map
-                                    </div>
-                                </div>
-                                <div
-                                    class="propertiesfound__item__showonmap__info"
-                                >
-                                    Situated in Newcastle City Centre, Maldron
-                                    Hotel features free WiFi and a private court
-                                    yard.
-                                </div>
-                                <button class="propertiesfound__item__button">
-                                    Make a booking
-                                </button>
-                            </div>
-                        </div>
+                       </div>
+                           
+                     
                         
-                    </div>
-                                        <div class="propertiesfound">
+                        
                         <div class="propertiesfound__item">
-                            <div class="propertiesfound__item__title">
-                                254 Properties Found
-                            </div>
-                            <div class="propertiesfound__item__gallery">
+                            <div class="propertiesfound__item__galleryandinfo">
+                                <div class="propertiesfound__item__gallery">
                                 <img
                                     class="propertiesfound_item_img"
-                                    src="./assets/house3.png"
+                                    src="./assets/house1.png"
                                     alt=""
                                 />
                             </div>
                             <div class="propertiesfound__item__info">
                                 <div class="propertiesfound__item__rating">
+                                    <div class="propertiesfound__item__rating__stars">
                                     <div
                                         class="propertiesfound__item__rating__star"
                                     >
@@ -365,6 +306,10 @@
                                     >
                                         <img src="./assets/Star.png" alt="" />
                                     </div>
+                                    </div>
+                                     <button class="propertiesfound__item__newbutton">
+                                    Make a booking
+                                        </button>
                                 </div>
                                 <div class="propertiesfound__item__name">
                                     Estate de la Newcastle
@@ -393,13 +338,95 @@
                                     Hotel features free WiFi and a private court
                                     yard.
                                 </div>
+                                <div>
                                 <button class="propertiesfound__item__button">
                                     Make a booking
                                 </button>
+                                </div>
                             </div>
                         </div>
+                        </div>
+
+                           
                        
-                    </div>
+
+                        <div class="propertiesfound__item">
+                            <div class="propertiesfound__item__galleryandinfo">
+                                <div class="propertiesfound__item__gallery">
+                                <img
+                                    class="propertiesfound_item_img"
+                                    src="./assets/house1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="propertiesfound__item__info">
+                                <div class="propertiesfound__item__rating">
+                                    <div class="propertiesfound__item__rating__stars">
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__rating__star"
+                                    >
+                                        <img src="./assets/Star.png" alt="" />
+                                    </div>
+                                    </div>
+                                     <button class="propertiesfound__item__newbutton">
+                                    Make a booking
+                                        </button>
+                                </div>
+                                <div class="propertiesfound__item__name">
+                                    Estate de la Newcastle
+                                </div>
+                                <div class="propertiesfound__item__description">
+                                    Newcastle City Centre, Newcastle upon Tyne
+                                    0.1km from centre
+                                </div>
+                                <div class="propertiesfound__item__showonmap">
+                                    <div>
+                                        <img
+                                            src="./assets/Location.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="propertiesfound__item__showonmap__text"
+                                    >
+                                        Show on map
+                                    </div>
+                                </div>
+                                <div
+                                    class="propertiesfound__item__showonmap__info"
+                                >
+                                    Situated in Newcastle City Centre, Maldron
+                                    Hotel features free WiFi and a private court
+                                    yard.
+                                </div>
+                                <div>
+                                <button class="propertiesfound__item__button">
+                                    Make a booking
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
                 </div>
             </section>
             <section class="notifications__container">
@@ -465,27 +492,62 @@
             </section>
         </main>
         <footer>
-            <div>
+            <div class="travelulu__footer">
+                <div class="travelulu__footer__image">
                 <img src="./assets/Travelulu-logo.png" alt="Travelulu logo" />
-            </div>
+                </div>
+                <div>
+            
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
                 ullamcorper magna, ac laoreet ex. Integer a consequat lectus.
                 Nullam tortor sem 
             </p>
-
+            </div>
             <p>Copyright 2021, All Rights Reserved.</p>
+            </div>
+            <div class="services">
+                <div class="services__title"><h2>Services</h2></div>
+                <div class="services__menu">
+                    <ul>
+                        <li>Planning</li>
+                        <li>Financing</li>
+                        <li>Purchasing</li>
+                        <li>Meeting</li>
+                        <li>Flying</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="continents">
+                <div class="continents__title"><h2>Continents</h2></div>
+                <div class="continents__menu">
+                    <ul>
+                        <li>North America</li>
+                        <li>South America</li>
+                        <li>Asia</li>
+                        <li>Africa</li>
+                        <li>Europe</li>
+                        <li>Australia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="contact">
             <h2>Contact</h2>
-            <div>
+            
                 <a href="#">travelulu@website.com</a>
                 
-            </div>
+            
             <p>
                 22 Street Address,, Suburb Address Main City, PO Box, Country 
             </p>
             <p>
                08 8888 88888
             </p>
+            </div>
         </footer>
+        </div>
     </body>
 </html>
+
+<script src="./index.js"></script>
