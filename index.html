@@ -9,16 +9,19 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+        
         <title>Travelulu</title>
     </head>
-    <body>
+    <body class="body__container">
+        <div>
         <header>
+            <nav>     
             <div>
                 <img src="./assets/Travelulu-logo.png" alt="Logo Travelulu" />
             </div>
             <div>
                 <svg
+                    id="burger"
                     class="burger"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -30,10 +33,14 @@
                     />
                 </svg>
             </div>
-        </header>
-        <main>
-            <section class="panel">
+            
+            </nav>
+            <div class="subline" id="subline"></div>
+             <section class="panel" id="panel1">
                 <h1>Find deals on hotels, homes and much more...</h1>
+                <div class="panel__input__containers">
+                
+                <div class="where__container">
                 <input
                     class="where"
                     type="text"
@@ -43,6 +50,8 @@
                     placeholder="Where are you going?"
                     href="./assets/Search.png"
                 />
+                </div>
+                <div class="dates__container">
                 <input
                     class="dates"
                     type="text"
@@ -51,6 +60,8 @@
                     required
                     placeholder="Check-in - Check-out"
                 />
+                </div>
+                <div class="people__container">
                 <input
                     class="people"
                     type="text"
@@ -59,12 +70,19 @@
                     required
                     placeholder="2 adults - 0 children"
                 />
-
+                </div>
+                <div class="search__container">
                 <button class="search" type="submit" value="Search">
                     Search
                 </button>
+                </div>
+                </div>
             </section>
-            <section>
+        </header>
+        <div id="js__menu"></div>
+        <main>
+           
+            <section class="searchandproperties">
                 <div class="sidebar">
                     <form class="sidebar__form" action="get">
                         <div class="sidebar__form__title__container">
@@ -169,14 +187,10 @@
                         </div>
                     </form>
                 </div>
-                <div>
-                    <div>
-                      <div class="propertiesfound">
+                       <div class="propertiesfound">
                         <div class="propertiesfound__item">
-                            <div class="propertiesfound__item__title">
-                                254 Properties Found
-                            </div>
-                            <div class="propertiesfound__item__gallery">
+                            <div class="propertiesfound__item__galleryandinfo">
+                                <div class="propertiesfound__item__gallery">
                                 <img
                                     class="propertiesfound_item_img"
                                     src="./assets/house1.png"
@@ -185,6 +199,7 @@
                             </div>
                             <div class="propertiesfound__item__info">
                                 <div class="propertiesfound__item__rating">
+                                    <div class="propertiesfound__item__rating__stars">
                                     <div
                                         class="propertiesfound__item__rating__star"
                                     >
@@ -210,6 +225,10 @@
                                     >
                                         <img src="./assets/Star.png" alt="" />
                                     </div>
+                                    </div>
+                                     <button class="propertiesfound__item__newbutton">
+                                    Make a booking
+                                        </button>
                                 </div>
                                 <div class="propertiesfound__item__name">
                                     Estate de la Newcastle
@@ -238,19 +257,21 @@
                                     Hotel features free WiFi and a private court
                                     yard.
                                 </div>
+                                <div>
                                 <button class="propertiesfound__item__button">
                                     Make a booking
                                 </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="propertiesfound__bottom__line"></div>
-                    </div>
-                                        <div class="propertiesfound">
+                       </div>
+                           
+                     
+                        
+                        
                         <div class="propertiesfound__item">
-                            <div class="propertiesfound__item__title">
-                                254 Properties Found
-                            </div>
-                            <div class="propertiesfound__item__gallery">
+                            <div class="propertiesfound__item__galleryandinfo">
+                                <div class="propertiesfound__item__gallery">
                                 <img
                                     class="propertiesfound_item_img"
                                     src="./assets/house1.png"
@@ -259,6 +280,7 @@
                             </div>
                             <div class="propertiesfound__item__info">
                                 <div class="propertiesfound__item__rating">
+                                    <div class="propertiesfound__item__rating__stars">
                                     <div
                                         class="propertiesfound__item__rating__star"
                                     >
@@ -284,6 +306,10 @@
                                     >
                                         <img src="./assets/Star.png" alt="" />
                                     </div>
+                                    </div>
+                                     <button class="propertiesfound__item__newbutton">
+                                    Make a booking
+                                        </button>
                                 </div>
                                 <div class="propertiesfound__item__name">
                                     Estate de la Newcastle
@@ -312,19 +338,21 @@
                                     Hotel features free WiFi and a private court
                                     yard.
                                 </div>
+                                <div>
                                 <button class="propertiesfound__item__button">
                                     Make a booking
                                 </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="propertiesfound__bottom__line"></div>
-                    </div>
-                                        <div class="propertiesfound">
+                        </div>
+
+                           
+                       
+
                         <div class="propertiesfound__item">
-                            <div class="propertiesfound__item__title">
-                                254 Properties Found
-                            </div>
-                            <div class="propertiesfound__item__gallery">
+                            <div class="propertiesfound__item__galleryandinfo">
+                                <div class="propertiesfound__item__gallery">
                                 <img
                                     class="propertiesfound_item_img"
                                     src="./assets/house1.png"
@@ -333,6 +361,7 @@
                             </div>
                             <div class="propertiesfound__item__info">
                                 <div class="propertiesfound__item__rating">
+                                    <div class="propertiesfound__item__rating__stars">
                                     <div
                                         class="propertiesfound__item__rating__star"
                                     >
@@ -358,6 +387,10 @@
                                     >
                                         <img src="./assets/Star.png" alt="" />
                                     </div>
+                                    </div>
+                                     <button class="propertiesfound__item__newbutton">
+                                    Make a booking
+                                        </button>
                                 </div>
                                 <div class="propertiesfound__item__name">
                                     Estate de la Newcastle
@@ -386,55 +419,67 @@
                                     Hotel features free WiFi and a private court
                                     yard.
                                 </div>
+                                <div>
                                 <button class="propertiesfound__item__button">
                                     Make a booking
                                 </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="propertiesfound__bottom__line"></div>
-                    </div>
+                       </div>
                 </div>
             </section>
-            <section>
-                <span
-                    ><button class="greenbutton" name="green-button">
-                        <div>
+            <section class="notifications__container">
+                    <div class="greencontainer">
+                        <div class="greencontainer__thumbsup__container">
                             <img
-                                class="thumbsup"
+                                class="greencontainer__thumbsup"
                                 src="./assets/Thumbs-up.png"
                                 alt="thumbs up"
                             />
                         </div>
+                        <div class="greencontainer__thumbsup__container__text__container">
+                            <p>
                         Lock in a great price for your upcoming stay. Get
                         instant confirmation with FREE cancellation on most
                         rooms!
+                        </p>
+                        </div>
+                        <div class="greencontainer__thumbsup__container__cross">
                         <img
                             class="closecross"
                             src="./assets/Close-cross.png"
                             alt="close cross"
-                        /></button
-                ></span>
-                <span
-                    ><button class="redbutton" name="red-button">
-                        <div>
+                        />
+                        </div>
+                     </div>
+                     
+                         <div class="redcontainer">
+                        <div class="redcontainer__alert__container">
                             <img
-                                class="alert"
+                                class="redcontainer__alert"
                                 src="./assets/Alert-info.png"
-                                alt="alert info"
+                                alt="alert"
                             />
                         </div>
-                        From 6 April 2022, your chosen cancellation policy will
-                        apply, regardless of Coronavirus. We recommend booking a
-                        free cancellation option in case your travel plans need
-                        to change.
+                        <div class="redcontainer__alert__container__text__container">
+                            <p>
+            From 6 April 2022, your chosen cancellation policy will apply, regardless of Coronavirus. We recommend booking a free cancellation option in case your travel plans need to change. 
+                        </p>
+                        </div>
+                        <div class="redcontainer__alert__container__cross">
                         <img
                             class="closecross"
                             src="./assets/Close-cross.png"
                             alt="close cross"
-                        /></button
-                ></span>
+                        />
+                        </div>   
+
+
+
             </section>
-            <aside class="purple-box">
+            <section>
+            <div class="purple-box">
                 <div>
                     <p>Need more information to get started?</p>
                 </div>
@@ -443,27 +488,66 @@
                         CONTACT US
                     </button>
                 </div>
-            </aside>
+            </div>
+            </section>
         </main>
         <footer>
-            <div>
+            <div class="travelulu__footer">
+                <div class="travelulu__footer__image">
                 <img src="./assets/Travelulu-logo.png" alt="Travelulu logo" />
-            </div>
+                </div>
+                <div>
+            
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
                 ullamcorper magna, ac laoreet ex. Integer a consequat lectus.
-                Nullam tortor sem Copyright 2021, All Rights Reserved.
+                Nullam tortor sem 
             </p>
-
-            <h2>Contact</h2>
-            <div>
-                <a href="#">travelulu@website.com</a>
-                <a href="mailto:ptous12@hotmail.com"></a>
             </div>
+            <p>Copyright 2021, All Rights Reserved.</p>
+            </div>
+            <div class="services">
+                <div class="services__title"><h2>Services</h2></div>
+                <div class="services__menu">
+                    <ul>
+                        <li>Planning</li>
+                        <li>Financing</li>
+                        <li>Purchasing</li>
+                        <li>Meeting</li>
+                        <li>Flying</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="continents">
+                <div class="continents__title"><h2>Continents</h2></div>
+                <div class="continents__menu">
+                    <ul>
+                        <li>North America</li>
+                        <li>South America</li>
+                        <li>Asia</li>
+                        <li>Africa</li>
+                        <li>Europe</li>
+                        <li>Australia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="contact">
+            <h2>Contact</h2>
+            
+                <a href="#">travelulu@website.com</a>
+                
+            
             <p>
-                22 Street Address,, Suburb Address Main City, PO Box, Country 08
-                8888 88888
+                22 Street Address,, Suburb Address Main City, PO Box, Country 
             </p>
+            <p>
+               08 8888 88888
+            </p>
+            </div>
         </footer>
+        </div>
     </body>
 </html>
+
+<script src="./index.js"></script>
